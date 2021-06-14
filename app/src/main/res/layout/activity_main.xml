@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/zero"
+        android:textSize="@dimen/fifty_four"
+        android:gravity="end"
+        android:background="@drawable/tv_border"
+        android:padding="@dimen/four"
+        android:layout_margin="@dimen/sixteen"
+        />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        >
+
+        <LinearLayout
+            android:id="@+id/ll_top_row"
+            style="@style/row_style">
+
+            <Button
+                android:id="@+id/bt_clear"
+                android:onClick="operationFunction"
+                android:text="@string/clear"
+                style="@style/calculator_button_style" />
+
+            <Button
+                android:id="@+id/bt_positive_negative"
+                android:onClick="operationFunction"
+                android:text="@string/positive_negative"
+                style="@style/calculator_button_style"/>
+
+            <Button
+                android:id="@+id/bt_percentage"
+                android:onClick="operationFunction"
+                android:text="@string/percentage"
+                style="@style/calculator_button_style"/>
+
+            <Button
+                android:id="@+id/bt_division"
+                android:onClick="operationFunction"
+                android:text="@string/division"
+                style="@style/calculator_button_style"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_second_row"
+            style="@style/row_style">
+
+            <Button
+                android:id="@+id/bt_seven"
+                android:onClick="operationFunction"
+                android:text="@string/seven"
+                style="@style/calculator_button_style" />
+
+            <Button
+                android:id="@+id/bt_eight"
+                android:onClick="operationFunction"
+                android:text="@string/eight"
+                style="@style/calculator_button_style" />
+
+            <Button
+                android:id="@+id/bt_nine"
+                android:onClick="operationFunction"
+                android:text="@string/nine"
+                style="@style/calculator_button_style" />
+
+            <Button
+                android:id="@+id/bt_multiplication"
+                android:onClick="operationFunction"
+                android:text="@string/multiplication"
+                style="@style/calculator_button_style" />
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_third_row"
+        style="@style/row_style">
+
+        <Button
+            android:id="@+id/bt_four"
+            android:onClick="operationFunction"
+            android:text="@string/four"
+            style="@style/calculator_button_style" />
+
+        <Button
+            android:id="@+id/bt_five"
+            android:onClick="operationFunction"
+            android:text="@string/five"
+            style="@style/calculator_button_style" />
+
+        <Button
+            android:id="@+id/bt_six"
+            android:onClick="operationFunction"
+            android:text="@string/six"
+            style="@style/calculator_button_style" />
+
+        <Button
+            android:id="@+id/bt_subtraction"
+            android:onClick="operationFunction"
+            android:text="@string/subtraction"
+            style="@style/calculator_button_style" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_fourth_row"
+        style="@style/row_style">
+
+        <Button
+            android:id="@+id/bt_one"
+            android:onClick="operationFunction"
+            android:text="@string/one"
+            style="@style/calculator_button_style" />
+
+        <Button
+            android:id="@+id/bt_two"
+            android:onClick="operationFunction"
+            android:text="@string/two"
+            style="@style/calculator_button_style" />
+
+        <Button
+            android:id="@+id/bt_three"
+            android:onClick="operationFunction"
+            android:text="@string/three"
+            style="@style/calculator_button_style"
+            />
+
+        <Button
+            android:id="@+id/bt_addition"
+            android:onClick="operationFunction"
+            android:text="@string/addition"
+            style="@style/calculator_button_style" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_last_row"
+        style="@style/row_style">
+
+        <Button
+            android:id="@+id/bt_zero"
+            android:onClick="operationFunction"
+            android:text="@string/zero"
+            style="@style/calculator_zero_button_style" />
+
+        <Button
+            android:id="@+id/bt_period"
+            android:onClick="operationFunction"
+            android:text="@string/period"
+            style="@style/calculator_button_style" />
+
+        <Button
+            android:id="@+id/bt_equals"
+            android:onClick="operationFunction"
+            android:text="@string/equals"
+            style="@style/calculator_button_style" />
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
